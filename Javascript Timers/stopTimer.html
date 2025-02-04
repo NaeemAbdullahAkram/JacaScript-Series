@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Timers</title>
+</head>
+<!-- CSS -->
+<style>
+    body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 32vh 0;
+    }
+    .block{
+        flex-direction: row;
+    }
+
+</style>
+
+
+<body>  
+    <h1>Javascript Timers</h1>
+    <p>Page to Display a message after 3 seconds</p>
+    <p id="demo">Message of the page</p>
+    <div class="block">    
+        <button onclick="startFunction()">Start</button>
+        <button onclick="stopFunction()">Stop</button>
+    </div>
+</body>
+
+<!-- Javascript -->
+<script>
+    var myvar;
+    function startFunction(){
+        myvar = setTimeout(myFunction, 3000)
+    }
+
+    function myFunction(){
+        document.getElementById("demo").innerHTML = "Message after 3 seconds"
+    }
+
+    function stopFunction(){
+        clearTimeout(myvar)
+    }
+
+
+</script>
+
+</html>

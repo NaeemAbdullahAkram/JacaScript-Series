@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Antonio', sans-serif;
+}
+body{
+    overflow: hidden;
+
+}
+header{
+    width: 100%;
+    background-color: #2E3B65;
+    color: #E4EBF5;
+    padding: 10px;
+    padding-left: 70px;
+}
+
+.nav-container{
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; 
+    color: #2E3B65;
+    border: 1px solid #2E3B65;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 55rem;
+}
+.nav-items{
+    padding-left: 40px;
+    list-style: none;
+    text-decoration: none;
+
+}
+.nav-items:hover{
+    cursor: pointer;
+}
+
+.main-body{
+    display: flex;
+}
+
+.left{
+    float: left;
+    height: 18rem;
+    padding: 14rem 8rem 0 8rem;
+    background-color: #2E3B65;
+    color: #E4EBF5;
+    font-size: larger;
+}
+.right{
+    float: right;
+    height: 18rem;
+    padding: 14rem 8rem 0 8rem;
+    background-color: #2E3B65;
+    color: #E4EBF5;
+    font-size: larger;
+}
+.main{
+    width: 50%;
+    padding: 0 4rem;
+    /* background-color: royalblue; */
+}
+.image{
+    padding-left: 4rem;
+    height: 23rem;
+    width: 25rem;
+}
+.text{
+    padding-left: 7rem;
+    max-height: 16rem;
+    max-width: 25rem;
+}
+h1{
+    /* padding-left: 4rem; */
+    text-align: center;
+}
+footer{
+    width: 100%;
+    /* background-color: #2E3B65; */
+    color: #2E3B65;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #2E3B65;
+}
